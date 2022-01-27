@@ -14,27 +14,27 @@
 // rev > kylling > korn
 // func loop_through_west_and_add_to_boat() {}
 
-
-
-
-
 package PutInBoat
 
-import (
-	"fmt"
-	"testing"
-)
+import "testing"
 
-func TestBoat(t *testing.T) {
-	fmt.Println("Starting")
-	east:= []string{}
-	west:= []string{"korn", "hs", "kylling", "rev"}
-	boat:= []string{}
-
-	func bring_to_other_side() {
-		if (east.length == 4) {
-			fmt.print("done")
-		}
+func TestInsertHS(t *testing.T) {
+	wanted := "HS is in boat"
+	got := "fox"
+	if got != wanted {
+		t.Errorf("Feil, fikk #{got}, ønsket #{wanted}")
 	}
 }
 
+//func TestBoat(t *testing.T) {
+//fmt.Println("Starting")
+//east:= []string{}
+//west:= []string{"korn", "hs", "kylling", "rev"}
+//boat:= []string{}
+
+//func bring_to_other_side() {
+//	if (east.length == 4) {
+//		fmt.print("done")
+//	}
+//}
+//}
